@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="444" it="0" lt="336" ct="40" ts="1628669896981" s="true" lb="登录啊" rc="200" rm="OK" tn="登录__token设全局变量 1-1" dt="text" by="2325" sby="270" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="2" it="0" lt="0" ct="0" ts="1628669897422" s="true" lb="登录啊-0" rc="200" rm="OK" tn="登录__token设全局变量 1-1" dt="text" by="1720" sby="0" sc="1" ec="0" ng="0" na="0" hn="SKY-20181227NRB">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.concurrentPool=6
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.2.130
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@4f66c022
+HTTPSampler.method=POST
+HTTPSampler.path=/api/admin.v1.User/Login
+HTTPSampler.port=9090
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&#xd;
+	&quot;username&quot;:&quot;admin&quot;,&#xd;
+	&quot;password&quot;:&quot;YUc5M2JHbHVhdz09&quot;&#xd;
+}()
+TestElement.enabled=true
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=登录啊
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI
+Authorization01=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI
+Authorization01_matchNr=1
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@4bf3a6ba
+START.HMS=161810
+START.MS=1628669890779
+START.YMD=20210811
+TESTSTART.MS=1628669896490
+__jm__登录__token设全局变量__idx=0
+__jmeter.U_T__=登录__token设全局变量 1-1
+password1=YUc5M2JHbHVhdz09
+postgre=org.apache.jmeter.protocol.jdbc.config.DataSourceElement$DataSourceComponentImpl@21847f1e
+username1=admin
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 226
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 11 Aug 2021 08:18:02 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Content-Length: 58
+Host: 192.168.2.130:9090
+User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:200,&quot;msg&quot;:&quot;登录成功&quot;,&quot;data&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;username&quot;:&quot;admin&quot;,&#xd;
+	&quot;password&quot;:&quot;YUc5M2JHbHVhdz09&quot;&#xd;
+}</queryString>
+  <java.net.URL>http://192.168.2.130:9090/api/admin.v1.User/Login</java.net.URL>
+</httpSample>
+<sample t="431" it="0" lt="428" ct="415" ts="1628669897675" s="true" lb="获取mysqlCDM策略" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="15" sby="0" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <responseHeader class="java.lang.String">shared:false, driver:org.postgresql.Driver, url:jdbc:postgresql://192.168.2.130:5432/postgres, user:postgres</responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">id
+677
+532
+531
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">[Select Statement] SELECT x.id
+FROM public.protection_strategy x
+WHERE deleted_at =0 and app_kind=2 and able =true and backup_kind =1
+ORDER BY x.id DESC
+
+</samplerData>
+</sample>
+<httpSample t="169" it="0" lt="169" ct="5" ts="1628669898108" s="true" lb="mysql_CDM手动备份" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="432" sby="460" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 54
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 11 Aug 2021 08:18:03 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI
+Content-Length: 29
+Host: 192.168.2.130:9090
+User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,&quot;total&quot;:&quot;1&quot;,&quot;success&quot;:&quot;1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:&quot;677&quot;,&#xd;
+	&quot;type&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://192.168.2.130:9090/api/admin.v1.ProtectionStrategy/Run</java.net.URL>
+</httpSample>
+<httpSample t="646" it="0" lt="646" ct="0" ts="1628669898325" s="true" lb="mysql_CDM手动备份" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="432" sby="460" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 54
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 11 Aug 2021 08:18:04 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI
+Content-Length: 29
+Host: 192.168.2.130:9090
+User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,&quot;total&quot;:&quot;1&quot;,&quot;success&quot;:&quot;1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:&quot;532&quot;,&#xd;
+	&quot;type&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://192.168.2.130:9090/api/admin.v1.ProtectionStrategy/Run</java.net.URL>
+</httpSample>
+<httpSample t="2112" it="0" lt="2112" ct="0" ts="1628669899017" s="true" lb="mysql_CDM手动备份" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="432" sby="460" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 54
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 11 Aug 2021 08:18:04 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI
+Content-Length: 29
+Host: 192.168.2.130:9090
+User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,&quot;total&quot;:&quot;1&quot;,&quot;success&quot;:&quot;1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:&quot;531&quot;,&#xd;
+	&quot;type&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://192.168.2.130:9090/api/admin.v1.ProtectionStrategy/Run</java.net.URL>
+</httpSample>
+<sample t="8" it="0" lt="8" ct="0" ts="1628669902077" s="true" lb="获取mysqlCT策略" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="11" sby="0" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <responseHeader class="java.lang.String">shared:false, driver:org.postgresql.Driver, url:jdbc:postgresql://192.168.2.130:5432/postgres, user:postgres</responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">id
+713
+712
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">[Select Statement] SELECT x.id
+FROM public.protection_strategy x
+WHERE deleted_at =0 and app_kind=2 and able =true and backup_kind =2
+ORDER BY x.id DESC
+
+</samplerData>
+</sample>
+<httpSample t="896" it="0" lt="896" ct="238" ts="1628669902086" s="true" lb="mysql_CT手动备份" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="432" sby="460" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 54
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 11 Aug 2021 08:18:07 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI
+Content-Length: 29
+Host: 192.168.2.130:9090
+User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,&quot;total&quot;:&quot;1&quot;,&quot;success&quot;:&quot;1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:&quot;713&quot;,&#xd;
+	&quot;type&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://192.168.2.130:9090/api/admin.v1.ProtectionStrategy/Run</java.net.URL>
+</httpSample>
+<httpSample t="240" it="0" lt="240" ct="0" ts="1628669903030" s="true" lb="mysql_CT手动备份" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="432" sby="460" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 54
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 11 Aug 2021 08:18:08 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI
+Content-Length: 29
+Host: 192.168.2.130:9090
+User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,&quot;total&quot;:&quot;1&quot;,&quot;success&quot;:&quot;1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:&quot;712&quot;,&#xd;
+	&quot;type&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://192.168.2.130:9090/api/admin.v1.ProtectionStrategy/Run</java.net.URL>
+</httpSample>
+<sample t="3" it="0" lt="3" ct="0" ts="1628669903285" s="true" lb="获取mssqlCDM策略" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="19" sby="0" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <responseHeader class="java.lang.String">shared:false, driver:org.postgresql.Driver, url:jdbc:postgresql://192.168.2.130:5432/postgres, user:postgres</responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">id
+692
+621
+570
+569
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">[Select Statement] SELECT x.id
+FROM public.protection_strategy x
+WHERE deleted_at =0 and app_kind=3 and able =true and backup_kind =1
+ORDER BY x.id DESC
+
+</samplerData>
+</sample>
+<httpSample t="266" it="0" lt="266" ct="0" ts="1628669903289" s="true" lb="mssqlCDM手动备份" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="432" sby="460" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 54
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 11 Aug 2021 08:18:08 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI
+Content-Length: 29
+Host: 192.168.2.130:9090
+User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,&quot;total&quot;:&quot;1&quot;,&quot;success&quot;:&quot;1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:&quot;692&quot;,&#xd;
+	&quot;type&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://192.168.2.130:9090/api/admin.v1.ProtectionStrategy/Run</java.net.URL>
+</httpSample>
+<httpSample t="300" it="0" lt="300" ct="0" ts="1628669903584" s="true" lb="mssqlCDM手动备份" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="432" sby="460" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 54
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 11 Aug 2021 08:18:09 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI
+Content-Length: 29
+Host: 192.168.2.130:9090
+User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,&quot;total&quot;:&quot;1&quot;,&quot;success&quot;:&quot;1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:&quot;621&quot;,&#xd;
+	&quot;type&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://192.168.2.130:9090/api/admin.v1.ProtectionStrategy/Run</java.net.URL>
+</httpSample>
+<httpSample t="267" it="0" lt="267" ct="0" ts="1628669903902" s="true" lb="mssqlCDM手动备份" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="432" sby="460" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 54
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 11 Aug 2021 08:18:09 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI
+Content-Length: 29
+Host: 192.168.2.130:9090
+User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,&quot;total&quot;:&quot;1&quot;,&quot;success&quot;:&quot;1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:&quot;570&quot;,&#xd;
+	&quot;type&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://192.168.2.130:9090/api/admin.v1.ProtectionStrategy/Run</java.net.URL>
+</httpSample>
+<httpSample t="347" it="0" lt="347" ct="3" ts="1628669904183" s="true" lb="mssqlCDM手动备份" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="432" sby="460" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 54
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 11 Aug 2021 08:18:09 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI
+Content-Length: 29
+Host: 192.168.2.130:9090
+User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,&quot;total&quot;:&quot;1&quot;,&quot;success&quot;:&quot;1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:&quot;569&quot;,&#xd;
+	&quot;type&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://192.168.2.130:9090/api/admin.v1.ProtectionStrategy/Run</java.net.URL>
+</httpSample>
+<sample t="250" it="0" lt="250" ct="0" ts="1628669904539" s="true" lb="获取mssqlCT策略" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="11" sby="0" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <responseHeader class="java.lang.String">shared:false, driver:org.postgresql.Driver, url:jdbc:postgresql://192.168.2.130:5432/postgres, user:postgres</responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">id
+575
+574
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">[Select Statement] SELECT x.id
+FROM public.protection_strategy x
+WHERE deleted_at =0 and app_kind=3 and able =true and backup_kind =2
+ORDER BY x.id DESC
+
+</samplerData>
+</sample>
+<httpSample t="105" it="0" lt="105" ct="0" ts="1628669904791" s="true" lb="mssqlCDM手动备份" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="432" sby="460" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 54
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 11 Aug 2021 08:18:10 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI
+Content-Length: 29
+Host: 192.168.2.130:9090
+User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,&quot;total&quot;:&quot;1&quot;,&quot;success&quot;:&quot;1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:&quot;575&quot;,&#xd;
+	&quot;type&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://192.168.2.130:9090/api/admin.v1.ProtectionStrategy/Run</java.net.URL>
+</httpSample>
+<httpSample t="656" it="0" lt="656" ct="0" ts="1628669904923" s="true" lb="mssqlCDM手动备份" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="432" sby="460" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 54
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 11 Aug 2021 08:18:10 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI
+Content-Length: 29
+Host: 192.168.2.130:9090
+User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,&quot;total&quot;:&quot;1&quot;,&quot;success&quot;:&quot;1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:&quot;574&quot;,&#xd;
+	&quot;type&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://192.168.2.130:9090/api/admin.v1.ProtectionStrategy/Run</java.net.URL>
+</httpSample>
+<sample t="3" it="0" lt="3" ct="0" ts="1628669905596" s="true" lb="获取pgsql策略" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="19" sby="0" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <responseHeader class="java.lang.String">shared:false, driver:org.postgresql.Driver, url:jdbc:postgresql://192.168.2.130:5432/postgres, user:postgres</responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">id
+673
+661
+659
+657
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">[Select Statement] SELECT x.id
+FROM public.protection_strategy x
+WHERE deleted_at =0 and app_kind=4 and able =true and backup_kind =1
+ORDER BY x.id DESC
+
+</samplerData>
+</sample>
+<httpSample t="1584" it="0" lt="1584" ct="0" ts="1628669905600" s="true" lb="pgsql手动备份" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="432" sby="460" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 54
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 11 Aug 2021 08:18:11 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI
+Content-Length: 29
+Host: 192.168.2.130:9090
+User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,&quot;total&quot;:&quot;1&quot;,&quot;success&quot;:&quot;1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:&quot;673&quot;,&#xd;
+	&quot;type&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://192.168.2.130:9090/api/admin.v1.ProtectionStrategy/Run</java.net.URL>
+</httpSample>
+<httpSample t="1469" it="0" lt="1468" ct="7" ts="1628669907202" s="true" lb="pgsql手动备份" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="432" sby="460" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 54
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 11 Aug 2021 08:18:12 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI
+Content-Length: 29
+Host: 192.168.2.130:9090
+User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,&quot;total&quot;:&quot;1&quot;,&quot;success&quot;:&quot;1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:&quot;661&quot;,&#xd;
+	&quot;type&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://192.168.2.130:9090/api/admin.v1.ProtectionStrategy/Run</java.net.URL>
+</httpSample>
+<httpSample t="608" it="0" lt="608" ct="0" ts="1628669908692" s="true" lb="pgsql手动备份" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="432" sby="460" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 54
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 11 Aug 2021 08:18:14 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI
+Content-Length: 29
+Host: 192.168.2.130:9090
+User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,&quot;total&quot;:&quot;1&quot;,&quot;success&quot;:&quot;1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:&quot;659&quot;,&#xd;
+	&quot;type&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://192.168.2.130:9090/api/admin.v1.ProtectionStrategy/Run</java.net.URL>
+</httpSample>
+<httpSample t="136" it="0" lt="136" ct="3" ts="1628669909313" s="true" lb="pgsql手动备份" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="432" sby="460" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 54
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 11 Aug 2021 08:18:15 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI
+Content-Length: 29
+Host: 192.168.2.130:9090
+User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,&quot;total&quot;:&quot;1&quot;,&quot;success&quot;:&quot;1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:&quot;657&quot;,&#xd;
+	&quot;type&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://192.168.2.130:9090/api/admin.v1.ProtectionStrategy/Run</java.net.URL>
+</httpSample>
+<sample t="5" it="0" lt="5" ct="0" ts="1628669909461" s="true" lb="获取file策略" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="11" sby="0" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <responseHeader class="java.lang.String">shared:false, driver:org.postgresql.Driver, url:jdbc:postgresql://192.168.2.130:5432/postgres, user:postgres</responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">id
+710
+708
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">[Select Statement] SELECT x.id
+FROM public.protection_strategy x
+WHERE deleted_at =0 and app_kind=5 and able =true and backup_kind =1
+ORDER BY x.id DESC
+
+</samplerData>
+</sample>
+<httpSample t="1544" it="0" lt="1544" ct="0" ts="1628669909467" s="true" lb="file手动备份" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="432" sby="460" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 54
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 11 Aug 2021 08:18:15 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI
+Content-Length: 29
+Host: 192.168.2.130:9090
+User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,&quot;total&quot;:&quot;1&quot;,&quot;success&quot;:&quot;1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:&quot;710&quot;,&#xd;
+	&quot;type&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://192.168.2.130:9090/api/admin.v1.ProtectionStrategy/Run</java.net.URL>
+</httpSample>
+<httpSample t="70" it="0" lt="70" ct="0" ts="1628669911036" s="true" lb="file手动备份" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="432" sby="460" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 54
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 11 Aug 2021 08:18:16 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI
+Content-Length: 29
+Host: 192.168.2.130:9090
+User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,&quot;total&quot;:&quot;1&quot;,&quot;success&quot;:&quot;1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:&quot;708&quot;,&#xd;
+	&quot;type&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://192.168.2.130:9090/api/admin.v1.ProtectionStrategy/Run</java.net.URL>
+</httpSample>
+<sample t="4" it="0" lt="4" ct="0" ts="1628669911119" s="true" lb="获取VM策略" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="7" sby="0" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <responseHeader class="java.lang.String">shared:false, driver:org.postgresql.Driver, url:jdbc:postgresql://192.168.2.130:5432/postgres, user:postgres</responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">id
+707
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">[Select Statement] SELECT x.id
+FROM public.protection_strategy x
+WHERE deleted_at =0 and app_kind=6 and able =true and backup_kind =1
+ORDER BY x.id DESC
+
+</samplerData>
+</sample>
+<httpSample t="730" it="0" lt="730" ct="0" ts="1628669911124" s="true" lb="VM手动备份" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="432" sby="460" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 54
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 11 Aug 2021 08:18:16 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI
+Content-Length: 29
+Host: 192.168.2.130:9090
+User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,&quot;total&quot;:&quot;1&quot;,&quot;success&quot;:&quot;1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:&quot;707&quot;,&#xd;
+	&quot;type&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://192.168.2.130:9090/api/admin.v1.ProtectionStrategy/Run</java.net.URL>
+</httpSample>
+<sample t="3" it="0" lt="3" ct="0" ts="1628669911877" s="true" lb="获取HV策略" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="11" sby="0" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <responseHeader class="java.lang.String">shared:false, driver:org.postgresql.Driver, url:jdbc:postgresql://192.168.2.130:5432/postgres, user:postgres</responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">id
+688
+686
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">[Select Statement] SELECT x.id
+FROM public.protection_strategy x
+WHERE deleted_at =0 and app_kind=7 and able =true and backup_kind =1
+ORDER BY x.id DESC
+
+</samplerData>
+</sample>
+<httpSample t="69" it="0" lt="69" ct="4" ts="1628669911881" s="true" lb="HV手动备份" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="432" sby="460" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 54
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 11 Aug 2021 08:18:17 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI
+Content-Length: 29
+Host: 192.168.2.130:9090
+User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,&quot;total&quot;:&quot;1&quot;,&quot;success&quot;:&quot;1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:&quot;688&quot;,&#xd;
+	&quot;type&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://192.168.2.130:9090/api/admin.v1.ProtectionStrategy/Run</java.net.URL>
+</httpSample>
+<httpSample t="91" it="0" lt="91" ct="0" ts="1628669911963" s="true" lb="HV手动备份" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="443" sby="460" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 65
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 11 Aug 2021 08:18:17 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI
+Content-Length: 29
+Host: 192.168.2.130:9090
+User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,&quot;total&quot;:&quot;2&quot;,&quot;skip&quot;:&quot;1&quot;,&quot;success&quot;:&quot;1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:&quot;686&quot;,&#xd;
+	&quot;type&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://192.168.2.130:9090/api/admin.v1.ProtectionStrategy/Run</java.net.URL>
+</httpSample>
+<sample t="3" it="0" lt="3" ct="0" ts="1628669912066" s="true" lb="获取dm策略" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="7" sby="0" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <responseHeader class="java.lang.String">shared:false, driver:org.postgresql.Driver, url:jdbc:postgresql://192.168.2.130:5432/postgres, user:postgres</responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">id
+671
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">[Select Statement] SELECT x.id
+FROM public.protection_strategy x
+WHERE deleted_at =0 and app_kind=8 and able =true and backup_kind =1
+ORDER BY x.id DESC
+
+</samplerData>
+</sample>
+<httpSample t="1758" it="0" lt="1757" ct="0" ts="1628669912070" s="true" lb="dm手动备份" rc="200" rm="OK" tn="一键备份 2-1" dt="text" by="432" sby="460" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 54
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 11 Aug 2021 08:18:17 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMzA4MiwiaWF0IjoxNjI4NjY5ODgyLCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.DtmdGVKRTBDtHjBwBpPIxDNHyZWYWC05lkpMNhUY3SI
+Content-Length: 29
+Host: 192.168.2.130:9090
+User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,&quot;total&quot;:&quot;1&quot;,&quot;success&quot;:&quot;1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:&quot;671&quot;,&#xd;
+	&quot;type&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://192.168.2.130:9090/api/admin.v1.ProtectionStrategy/Run</java.net.URL>
+</httpSample>
+
+</testResults>

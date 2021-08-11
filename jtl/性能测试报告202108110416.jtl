@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="450" it="0" lt="351" ct="43" ts="1628669803241" s="true" lb="登录啊" rc="200" rm="OK" tn="登录__token设全局变量 1-1" dt="text" by="2227" sby="270" sc="1" ec="0" ng="1" na="1" hn="SKY-20181227NRB">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="1" it="0" lt="0" ct="0" ts="1628669803690" s="true" lb="登录啊-0" rc="200" rm="OK" tn="登录__token设全局变量 1-1" dt="text" by="1622" sby="0" sc="1" ec="0" ng="0" na="0" hn="SKY-20181227NRB">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.concurrentPool=6
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.2.130
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@363ea7b3
+HTTPSampler.method=POST
+HTTPSampler.path=/api/admin.v1.User/Login
+HTTPSampler.port=9090
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&#xd;
+	&quot;username&quot;:&quot;admin&quot;,&#xd;
+	&quot;password&quot;:&quot;YUc5M2JHbHVhdz09&quot;&#xd;
+}()
+TestElement.enabled=true
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=登录啊
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMjk4OSwiaWF0IjoxNjI4NjY5Nzg5LCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.pP7MCAzdt0eVnuNPRoMzFbbBEvbqFMgAWHKJ2wGOoao
+Authorization01=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMjk4OSwiaWF0IjoxNjI4NjY5Nzg5LCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.pP7MCAzdt0eVnuNPRoMzFbbBEvbqFMgAWHKJ2wGOoao
+Authorization01_matchNr=1
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@38b26802
+START.HMS=161636
+START.MS=1628669796657
+START.YMD=20210811
+TESTSTART.MS=1628669802290
+__jm__登录__token设全局变量__idx=0
+__jmeter.U_T__=登录__token设全局变量 1-1
+password1=YUc5M2JHbHVhdz09
+username1=admin
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 226
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 11 Aug 2021 08:16:29 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Content-Length: 58
+Host: 192.168.2.130:9090
+User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:200,&quot;msg&quot;:&quot;登录成功&quot;,&quot;data&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTYyODcxMjk4OSwiaWF0IjoxNjI4NjY5Nzg5LCJpc3MiOiJjb20uaG93bGluay5jZG0uYWRtaW4ifQ.pP7MCAzdt0eVnuNPRoMzFbbBEvbqFMgAWHKJ2wGOoao&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;username&quot;:&quot;admin&quot;,&#xd;
+	&quot;password&quot;:&quot;YUc5M2JHbHVhdz09&quot;&#xd;
+}</queryString>
+  <java.net.URL>http://192.168.2.130:9090/api/admin.v1.User/Login</java.net.URL>
+</httpSample>
+
+</testResults>
