@@ -1,6 +1,6 @@
 # CDM_report
 ### 代码高亮
-```
+``` sql
 --自动手动备份历史记录
 select b."name" 备份策略名称uuuuuuuuuuuuuuuuu ,x.strategy_id ,x."type",x.state,x.备份策略对应类型对应状态自动备份任务个数
 from
